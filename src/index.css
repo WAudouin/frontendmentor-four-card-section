@@ -1,7 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@theme {
+  --palette-clay: #ea5454;
+  --palette-cyan: #44d3d2;
+  --palette-yellow: #fcae4a;
+  --palette-blue: #549ef2;
+  --palette-grey: #4d4f62;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
