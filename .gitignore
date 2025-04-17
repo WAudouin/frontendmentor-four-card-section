@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+four-card-feature-section-figma/*
+four-card-feature-section-master/*
