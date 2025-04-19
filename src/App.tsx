@@ -6,27 +6,23 @@ const cards = [
     title: "Supervisor",
     description: "Monitors activity to identify project roadblocks",
     className: "md:row-span-2 md:col-start-1 md:row-start-2",
-    icon: "magn-glass",
   },
   {
     title: "Team Builder",
     description:
       "Scans our talent network to create the optimal team for your project",
     className: "md:row-span-2 md:col-start-2",
-    icon: "web-home",
   },
   {
     title: "Karma",
     description: "Regularly evaluates our talent to ensure quality",
     className: "md:row-span-2 md:col-start-2 md:row-start-3",
-    icon: "lighbulb",
   },
   {
     title: "Calculator",
     description:
       "Uses data from past projects to provide better delivery estimates",
     className: "md:row-span-2 md:col-start-3 md:row-start-2",
-    icon: "comput-screen",
   },
 ];
 
@@ -48,9 +44,9 @@ const App = () => {
       <section className="grid  grid-rows-4 grid-cols-1 md:grid-cols-3 gap-8 w-full">
         {cards.map((c) => (
           <Card
+            key={c.title}
             title={c.title}
             description={c.description}
-            icon={c.icon}
             className={c.className}
           />
         ))}
