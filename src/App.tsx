@@ -41,7 +41,7 @@ const App = () => {
           points to ensure that your project is successful
         </p>
       </header>
-      <section className="grid  grid-rows-4 grid-cols-1 md:grid-cols-3 gap-8 w-full">
+      <section className="grid grid-rows-4 grid-cols-1 md:grid-cols-3 gap-8 w-full">
         {cards.map((c) => (
           <Card
             key={c.title}

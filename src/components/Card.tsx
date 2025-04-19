@@ -38,11 +38,11 @@ const Card = ({ className, title, description }: CardProps) => {
 
   return (
     <section
-      className={` ${className} shadow-lg rounded-xl text-left overflow-hidden hover:scale-105 duration-150`}
+      className={`${className} shadow-lg rounded-xl text-left overflow-hidden hover:scale-105 duration-150`}
     >
       <div className={`flex flex-col p-8  gap-3 border-t-4 ${getColor()}`}>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm text-grey">{description}</p>
+        <p className="text-sm font-normal text-grey">{description}</p>
         <span className="ml-auto mt-7">{getIcon()}</span>
       </div>
     </section>
